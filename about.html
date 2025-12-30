@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Fakhar e Arjumand</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <a href="index.html#work" onclick="toggleMenu()">My Work</a>
+        <a href="about.html" onclick="toggleMenu()">About</a>
+        <a href="mailto:email@example.com" onclick="toggleMenu()" style="color: var(--accent);">Work With Me</a>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">Fakhar e <span>Arjumand</span></a>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">My Work</a>
+                <a href="about.html" style="color: var(--accent);">About</a>
+            </div>
+
+            <a href="mailto:fakharearjumand.work@gmail.com" class="nav-cta-btn desktop-only">Work With Me</a>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" style="height: 50vh; min-height: 400px;">
+        <h1 class="reveal">More Than Just <br><span>Code.</span></h1>
+        <p class="reveal">Developer. Designer. Professional Creator based in KL.</p>
+    </div>
+
+    <section>
+        <div class="bento-grid">
+            
+            <div class="bento-card span-1 reveal" style="background-image: url(assets/Profile.jpg); grid-row: span 2;">
+                <div class="card-bg-text">The Profile</div>
+                <div>
+                    <h3 class="card-title">Fakhar e Arjumand</h3>
+                    <p class="card-desc">Based in Kuala Lumpur, Malaysia 🇲🇾</p>
+                </div>
+            </div>
+
+            <div class="bento-card span-2 reveal" style="background: linear-gradient(135deg, #161616 0%, #0a0a0a 100%);">
+                <div class="card-bg-text">My Journey</div>
+                <h3 class="card-title">Bridging Creativity & Logic</h3>
+                <br>
+                <p style="color: #d0d0d0; line-height: 1.6;">
+                    My journey started in Karachi and brought me to Kuala Lumpur to <strong>pursue my degree</strong>.
+                    <br><br>
+                    But my real education happened while building products. Combining my academic background with a passion for <strong>Full Stack Dev</strong> and <strong>Video Production</strong>, I now bridge the gap between engineering and design—speaking both languages fluently.
+                </p>
+            </div>
+
+            <div class="bento-card span-1 reveal" style="background-color: #161616;">
+                <div class="card-bg-text">Tech Stack</div>
+                <div class="tech-icons-grid">
+                    <i class="fab fa-react" title="React/Flutter"></i>
+                    <i class="fab fa-js" title="JavaScript"></i>
+                    <i class="fab fa-google" title="Firebase"></i>
+                    <i class="fab fa-figma" title="Figma"></i>
+                    <i class="fas fa-database" title="SQL"></i>
+                    <i class="fas fa-code" title="Dart"></i>
+                </div>
+                <h3 class="card-title" style="font-size: 1.2rem; margin-top: 20px;">Development</h3>
+                <p class="card-desc">Flutter, Dart, Firebase, Web</p>
+            </div>
+
+            <div class="bento-card span-1 reveal" style="background-color: #161616;">
+                <div class="card-bg-text">The Gear</div>
+                <ul style="list-style: none; margin-bottom: 10px; color: #d0d0d0;">
+                    <li>💻 MacBook Air M3</li>
+                    <li>⌨️ VS Code</li>
+                    <li>🎨 Figma</li>
+                    <li>📱 Physical Test Devices</li>
+                    <li>☕ Coffee (Fuel)</li>
+                </ul>
+                <h3 class="card-title" style="font-size: 1.2rem;">Tools of Trade</h3>
+                <p class="card-desc">Hardware & Software</p>
+            </div>
+
+            <div class="bento-card span-2 reveal" style="background-color: #161616;">
+                <div class="card-bg-text">Timeline</div>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <span class="year">2020</span>
+                        <span class="event">Wrote <br> "Hello World"</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item">
+                        <span class="year">2021</span>
+                        <span class="event">Started Learning Development</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item">
+                        <span class="year">2025</span>
+                        <span class="event">Certified Full Stack Developer</span>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item active">
+                        <span class="year">2025</span>
+                        <span class="event">Moved to Malaysia For Studies</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-card span-1 reveal" style="background: var(--accent); border: none; align-items: center; justify-content: center; text-align: center;">
+                <h3 style="color: white; font-size: 1.5rem; margin: 0;">Download CV</h3>
+                <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-top: 5px;">PDF Format (2.5MB)</p>
+                <a href="assets/FakhareArjuamnd_Resume_+60132749719.pdf" target="_blank" style="margin-top: 15px; color: white; font-size: 2rem;">
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer reveal">
+        <p style="color: #555; font-size: 0.8rem;">&copy; 2025 Designed & Built by Fakhar e Arjumand.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>

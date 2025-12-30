@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakhar e Arjumand | Full Stack Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <a href="#work" onclick="toggleMenu()">My Work</a>
+        <a href="about.html" onclick="toggleMenu()">About</a>
+        <a href="mailto:email@example.com" onclick="toggleMenu()" style="color: var(--accent);">Work With Me</a>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">Fakhar e <span>Arjumand</span></a>
+        
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#work">My Work</a>
+                <a href="about.html">About</a>
+            </div>
+
+            <a href="mailto:fakharearjumand.work@gmail.com" class="nav-cta-btn desktop-only">Work With Me</a>
+            
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1 class="reveal">Designing, Developing, and Creating <span>Digital Experiences.</span></h1>
+        <p class="reveal">From UI/UX and Graphic Design to Full-Stack Web & Mobile Development.</p>
+        <div class="reveal">
+            <a href="#work" class="btn">View My Work</a>
+        </div>
+    </div>
+
+    <section id="work">
+        <div class="section-header reveal">
+            <h2>My Work</h2>
+            <p>Filter by category to see my specific skills.</p>
+        </div>
+
+        <div class="filter-container reveal">
+            <button class="filter-btn active" onclick="filterProjects(event, 'all')">All</button>
+            <button class="filter-btn" onclick="filterProjects(event, 'app')">Apps</button>
+            <button class="filter-btn" onclick="filterProjects(event, 'web')">Websites</button>
+            <button class="filter-btn" onclick="filterProjects(event, 'graphic')">Graphics</button>
+        </div>
+
+        <div class="bento-grid">
+            
+            <div class="bento-card span-2 project-item reveal" data-category="app" onclick="openModal('exledger')" 
+                 style="background-image: url('https://placehold.co/800x450/161616/F2652D?text=ExLedger+App+Shot');">
+                <div class="card-bg-text">App</div>
+                <h3 class="card-title">ExLedger</h3>
+                <p class="card-desc">Flutter Expense Tracker with Firebase Sync.</p>
+            </div>
+
+            <div class="bento-card span-1 project-item reveal" data-category="web" onclick="openModal('kns')"
+                 style="background-image: url('https://placehold.co/400x450/222222/ffffff?text=Web+Design');">
+                <div class="card-bg-text">Web</div>
+                <h3 class="card-title">K&S Machinery</h3>
+                <p class="card-desc">Corporate Website.</p>
+            </div>
+
+            <div class="bento-card span-1 project-item reveal" data-category="app" onclick="openModal('docvault')"
+                 style="background-image: url('https://placehold.co/400x450/1a1a1a/F2652D?text=Security+App');">
+                 <div class="card-bg-text">App</div>
+                <h3 class="card-title">DocVault</h3>
+                <p class="card-desc">Secure Storage App.</p>
+            </div>
+
+            <div class="bento-card span-2 project-item reveal" data-category="graphic" onclick="openModal('uiux')"
+                 style="background-image: url('https://placehold.co/800x450/0a0a0a/00ff88?text=Neon+UI+Kit+Figma');">
+                <div class="card-bg-text">Graphics</div>
+                <h3 class="card-title">Neon UI Kit</h3>
+                <p class="card-desc">Complete App UI Design System (Figma).</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal">
+        <div class="contact-grid">
+            <div class="contact-left">
+                <h2>Let's create something<br><span style="color: var(--accent);">exceptional.</span></h2>
+                <p>I am currently open for freelance projects in App Development, Web Design & Graphics Design.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="icon-box">@</div>
+                        <div>
+                            <span style="display:block; font-size: 0.8rem; color: var(--text-muted);">Email Me</span>
+                            <a href="mailto:fakharearjumand.work@gmail.com" style="color:var(--text-main); text-decoration:none;">fakharearjumand.work@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-box">#</div>
+                        <div>
+                            <span style="display:block; font-size: 0.8rem; color: var(--text-muted);">WhatsApp / Call</span>
+                            <span>+60 132-749719</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/fakhar-e-arjumand-b9a1bb319/" class="social-btn">LinkedIn</a>
+                    <a href="#" class="social-btn">GitHub</a>
+                </div>
+            </div>
+
+            <div class="location-card reveal">
+                <div class="location-content">
+                    <div class="map-pin">📍</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Based in Malaysia, Kuala Lumpur</h3>
+                    <p style="color: var(--text-muted);">Working remotely with clients worldwide.</p>
+                    <br>
+                    <div style="display: inline-flex; align-items: center; gap: 10px; background: rgba(0,255,0,0.1); padding: 5px 15px; border-radius: 20px; border: 1px solid rgba(0,255,0,0.2);">
+                        <span style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88;"></span>
+                        <span style="color: #00ff88; font-size: 0.8rem; font-weight: 600;">Available for Work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer reveal">
+        <h2>Ready to build something?</h2>
+        <br>
+        <a href="mailto:fakharearjumand.work@gmail.com" class="btn">Get In Touch</a>
+        <br><br><br>
+        <p style="color: #555; font-size: 0.8rem;">&copy; 2025 Designed & Built by Fakhar e Arjumand.</p>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modalImage" class="modal-header"></div>
+            <div class="modal-body">
+                <h2 id="modalTitle" style="margin-bottom: 10px; color: var(--text-main);">Project Title</h2>
+                <p id="modalDesc" style="color: var(--text-muted); margin-bottom: 20px;">Project Description</p>
+                <a href="#" id="modalLink" class="btn" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>  
+
+    <script>
+        // 1. MOBILE MENU TOGGLE
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        // 2. SCROLL ANIMATION
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // 3. FILTERING (FIXED - No Glitch)
+        function filterProjects(e, category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+
+            const items = document.querySelectorAll('.project-item');
+            
+            items.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                
+                // If it matches, Show it immediately
+                if (category === 'all' || itemCategory === category) {
+                    item.style.display = 'flex'; 
+                    item.style.opacity = '1';
+                    item.style.transform = 'scale(1)';
+                } else {
+                    // If it doesn't match, Hide it immediately (prevents layout glitch)
+                    item.style.display = 'none';
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.95)';
+                }
+            });
+        }
+
+        // 4. MODAL DATA & LOGIC
+        const projectData = {
+            'exledger': {
+                title: "ExLedger Expense Tracker",
+                desc: "A complete Flutter application for tracking daily expenses.",
+                image: "https://placehold.co/800x450/161616/F2652D?text=ExLedger+App+Shot",
+                link: "#"
+            },
+            'kns': {
+                title: "K&S Machinery Website",
+                desc: "A responsive corporate website designed to showcase heavy machinery.",
+                image: "https://placehold.co/400x450/222222/ffffff?text=Web+Design",
+                link: "#"
+            },
+            'uiux': {
+                title: "Neon Mobile UI Kit",
+                desc: "A dark-mode focused UI kit designed in Figma.",
+                image: "https://placehold.co/800x450/0a0a0a/00ff88?text=Neon+UI+Kit+Figma",
+                link: "#"
+            },
+            'docvault': {
+                title: "DocVault Secure Storage",
+                desc: "Encrypted file storage for Android and iOS.",
+                image: "https://placehold.co/400x450/1a1a1a/F2652D?text=Security+App",
+                link: "#"
+            }
+        };
+
+        function openModal(projectId) {
+            const modal = document.getElementById('projectModal');
+            const data = projectData[projectId];
+            if(data) {
+                document.getElementById('modalTitle').innerText = data.title;
+                document.getElementById('modalDesc').innerText = data.desc;
+                document.getElementById('modalImage').style.backgroundImage = `url('${data.image}')`;
+                document.getElementById('modalLink').href = data.link;
+                modal.classList.add('show');
+            }
+        }
+
+        function closeModal() { document.getElementById('projectModal').classList.remove('show'); }
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target == modal) closeModal();
+        }
+    </script>
+</body>
+</html>
